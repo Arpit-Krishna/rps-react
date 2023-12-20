@@ -110,6 +110,8 @@ const reset=()=>{
     setGame(0);
     console.clear();
     setRpsHistory([]);
+    localStorage.setItem('record', JSON.stringify([]));
+    localStorage.setItem('Game',JSON.stringify({'Wins':0,'Loss':0,'Tie':0}));
     
   }
   return (
